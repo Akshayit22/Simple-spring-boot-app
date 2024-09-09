@@ -12,7 +12,7 @@ public class HealthCheck {
 	}
 
 	@GetMapping("/owner")
-	public String healthCheck() {
+	public String owner() {
 		return "Akshay";
 	}
 }
