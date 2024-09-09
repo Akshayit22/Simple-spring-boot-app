@@ -5,12 +5,13 @@ phases:
     runtime-versions:
       java: corretto11
     commands:
-      - echo Installing Maven...
+      - sudo apt update
+      - sudo apt install openjdk-17-jdk
+      - sudo apt install maven
       - mvn --version
   build:
     commands:
-      - echo Building the application...
-      - mvn clean package
+      - mvn install
 artifacts:
   files:
     - target/*.jar
