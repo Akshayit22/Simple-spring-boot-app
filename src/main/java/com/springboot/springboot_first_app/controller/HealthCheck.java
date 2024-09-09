@@ -10,4 +10,9 @@ public class HealthCheck {
 	public String healthCheck() {
 		return "Ok";
 	}
+
+	@GetMapping("/owner")
+	public String healthCheck() {
+		return "Akshay";
+	}
 }
