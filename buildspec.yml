@@ -1,17 +1,17 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      java: corretto11
-    commands:
-      - sudo apt update
-      - sudo apt install openjdk-17-jdk
-      - sudo apt install maven
-      - mvn --version
-  build:
-    commands:
-      - mvn install
+    install:
+        runtime-versions:
+            java: corretto11
+        commands:
+            - sudo apt update
+            - sudo apt install openjdk-17-jdk
+            - sudo apt install maven
+            - mvn --version
+    build:
+        commands:
+            - mvn install
 artifacts:
-  files:
-    - target/*.jar
+    files:
+        - target/*.jar

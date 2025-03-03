@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.springboot.springboot_first_app.entity.Product;
 
 @Repository
-public interface ProductRepo extends JpaRepository<Product,Integer>{
-	
+public interface ProductRepo extends JpaRepository<Product, Integer> {
+
 }

@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.springboot.springboot_first_app.entity.JournalEntry;
 
 @Repository
-public interface JournalRepo extends JpaRepository<JournalEntry,Integer>{
-	
+public interface JournalRepo extends JpaRepository<JournalEntry, Integer> {
+
 }
